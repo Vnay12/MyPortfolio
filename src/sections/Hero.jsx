@@ -1,8 +1,30 @@
 import React from "react";
 import { words } from "../constants/index.js";
 import HeroExperience from "../components/HeroModels/HeroExperience.jsx";
+import { useGSAP } from "@gsap/react";  
+import { gsap } from "gsap";
+import Button from "../components/Button.jsx";
+import Button2 from "../components/Button2.jsx";
+import AnimatedCounter from "../components/AnimatedCounter.jsx";
 
 const Hero = () => {
+  useGSAP(() => {
+gsap.fromTo(
+    ".hero-text h1",
+    {
+      y: 50,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      stagger: 0.5,
+      duration: 1,
+      ease: "power2.inOut",
+    }
+  );
+
+  })
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
@@ -42,6 +64,27 @@ const Hero = () => {
               Hi, I'm Vinay Naik, a developer based in India with a passion for
               creating innovative solutions.
             </p>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="/files/resume.pdf" // Path to your resume file
+                download="Vinay_Naik_Resume.pdf" // Suggested file name for download
+                className="md:w-80 md:h-16 w-80 h-12"
+              >
+                <Button2 text="Download Resume" id="button2" />
+              </a>
+              <a
+                href="/files/failure_cv.pdf" // Path to your failure CV file
+                download="Vinay_Naik_Failure_CV.pdf" // Suggested file name for download
+                className="md:w-80 md:h-16 w-80 h-12"
+              >
+                <Button2 text="Failure CV" id="button3" />
+              </a>
+            </div>
+            <Button 
+                className="md:w-80 md:h-16 w-80 h-12"
+                text="See My Work"
+                id="button"
+              />
           </div>
         </header>
 
@@ -52,6 +95,7 @@ const Hero = () => {
             </div>
         </figure>
       </div>
+      <AnimatedCounter/>
     </section>
   );
 };

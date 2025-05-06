@@ -3,16 +3,17 @@ import { Canvas } from '@react-three/fiber'
 import React from 'react'
 import { useMediaQuery } from 'react-responsive';
 import { Room } from './Room.jsx'
-import { Room2 } from './Mini_room_art_copy.jsx';
-import { Model } from './Without_draco.jsx';
+import { ISOROOM } from './Optimized-room.jsx';
+import HeroLights from './HeroLights.jsx';
+import Particles from './Particles.jsx';
+
 
 const HeroExperience = () => {
     const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   return (
     <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
-        <ambientLight intensity={0.5} color="#1a1a40"/>
-        <directionalLight position={[5, 5, 5]} intensity={2} />
+       
         <OrbitControls 
         enablePan={false}
         enableZoom={!isTablet}
@@ -22,10 +23,13 @@ const HeroExperience = () => {
         maxPolarAngle={Math.PI / 2}
         
         />
+
+        <HeroLights/>
+        <Particles count={100}/>
         <group scale={isMobile? 0.7 : 1}
         position={[0, -3.5, 0]}
         rotation={[0, -Math.PI / 4, 0]}>
-        <Room />
+       <ISOROOM/>
         </group>
         
     
