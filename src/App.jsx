@@ -1,15 +1,12 @@
 import React from 'react'
+import Hero from './sections/Hero.jsx'
 
 const App = () => {
   return (
-    <main>
-        <div>
-            <h1 className='text-3xl font-bold underline text-center mt-10' underline>
-                Welcome to My Portfolio!!!
-            </h1>
-        </div>
+<>
+<Hero />
 
-    </main>
+</>
   )
 }
 
