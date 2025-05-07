@@ -19,20 +19,20 @@ const navLinks = [
 
 const words = [
   { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
+  { text: "Data", imgPath: "/images/data.png" },
   { text: "Designs", imgPath: "/images/designs.svg" },
   { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Algorithms", imgPath: "/images/algo.png" },
+  { text: "Security", imgPath: "/images/secure.png" },
+  { text: "Process", imgPath: "/images/Process.png" },
 ];
 
 const counterItems = [
-  { value: 2.5, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 15, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 2.5, suffix: "+", label: "Years of Experience", imgPath: "/images/Workexp.png" },
+  { value: 8, suffix: "+", label: "Enterprise Projects",imgPath: "/images/project.png" },
+  { value: 15, suffix: "+", label: "Open Source PR Merged",imgPath: "/images/OpenS.png" },
+  { value: 78, suffix: "%", label: "Caffeine Intake",imgPath: "/images/coffee.png" },
 ];
 
 const logoIconsList = [

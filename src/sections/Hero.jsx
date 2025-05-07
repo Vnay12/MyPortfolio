@@ -26,7 +26,7 @@ gsap.fromTo(
 
   })
   return (
-    <section id="hero" className="relative overflow-hidden">
+    <section id="hero" className="relative overflow-hidden" >
       <div className="absolute top-0 left-0 z-10">
         <img src="/images/bg.png" alt="background" />
       </div>
@@ -34,9 +34,9 @@ gsap.fromTo(
       <div className="hero-layout">
         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
           <div className="flex flex-col gap-7">
-            <div className="hero-text">
+            <div className="hero-text" style={{ marginTop: "-99px" }}>
               <h1>
-                Shaping
+                Engineering
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((words) => (
@@ -56,35 +56,34 @@ gsap.fromTo(
                 </span>
               </h1>
 
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              <h1>into Real World Solutions</h1>
             </div>
 
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I'm Vinay Naik, a developer based in India with a passion for
-              creating innovative solutions.
+            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none" style={{ fontSize: "1.4rem" }}>
+              HI! I'm Vinay Naik, The Engineer who speaks both human and machine
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3" marginTop="2px">
               <a
                 href="/files/resume.pdf" // Path to your resume file
                 download="Vinay_Naik_Resume.pdf" // Suggested file name for download
-                className="md:w-80 md:h-16 w-80 h-12"
+                className="md:w-55 md:h-14 w-55 h-12"
               >
-                <Button2 text="Download Resume" id="button2" />
+                <Button2 text="Resume" id="button2" />
               </a>
               <a
                 href="/files/failure_cv.pdf" // Path to your failure CV file
                 download="Vinay_Naik_Failure_CV.pdf" // Suggested file name for download
-                className="md:w-80 md:h-16 w-80 h-12"
+                className="md:w-60 md:h-14 w-55 h-12"
               >
                 <Button2 text="Failure CV" id="button3" />
               </a>
-            </div>
-            <Button 
-                className="md:w-80 md:h-16 w-80 h-12"
-                text="See My Work"
+              <Button 
+                className="md:w-55 md:h-14 w-55 h-12"
+                text="Scroll"
                 id="button"
               />
+            </div>
+          
           </div>
         </header>
 

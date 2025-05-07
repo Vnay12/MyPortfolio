@@ -27,7 +27,7 @@ const HeroExperience = () => {
         <HeroLights/>
         <Particles count={100}/>
         <group scale={isMobile? 0.7 : 1}
-        position={[0, -3.5, 0]}
+        position={[1, -3.5, 0]}
         rotation={[0, -Math.PI / 4, 0]}>
        <ISOROOM/>
         </group>
