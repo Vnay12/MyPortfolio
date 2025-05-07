@@ -62,7 +62,9 @@ const ShowcaseSection = () => {
         <div
           ref={rydeRef}
           className="project relative cursor-pointer"
-          onClick={() => handleCardClick(rydeRef, "https://github.com/ryde-app")}
+          onClick={() =>
+            handleCardClick(rydeRef, "https://github.com/ryde-app")
+          }
         >
           <div
             className="image-wrapper project transition-transform duration-300 transform-gpu hover:scale-105 hover:z-10"
@@ -72,13 +74,13 @@ const ShowcaseSection = () => {
             }}
           >
             <img
-              src="/images/project1.png"
+              src="/images/proj1.png"
               alt="Ryde App Interface"
               style={{ objectFit: "fill" }}
             />
           </div>
           <div className="text-content mt-6">
-            <h2>Ryde - On-Demand Rides Made Simple</h2>
+            <h2>Suspecto: A Crime Detection System </h2>
           </div>
         </div>
 
@@ -102,7 +104,7 @@ const ShowcaseSection = () => {
               className="transition-transform duration-300 ease-in-out"
             />
           </div>
-          <h2 className="mt-6">Library Management Platform</h2>
+          <h2 className="mt-6">Project 2</h2>
         </div>
 
         <div
@@ -119,9 +121,13 @@ const ShowcaseSection = () => {
               zIndex: 1,
             }}
           >
-            <img src="/images/project3.png" alt="YC Directory App" />
+            <img
+              src="/images/project1.png"
+              alt="YC Directory App"
+              className="transition-transform duration-300 ease-in-out"
+            />
           </div>
-          <h2 className="mt-6">YC Directory - A Startup Showcase</h2>
+          <h2 className="mt-6">Project 3</h2>
         </div>
       </div>
     </div>

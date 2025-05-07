@@ -29,6 +29,8 @@ section {
   --color-blue-100: #2d2d38;
 }
 
+
+
 @layer utilities {
   .flex-center {
     @apply flex justify-center items-center;
@@ -321,6 +323,25 @@ section {
       }
     }
   }
+  /* projects section  */
+  .arrow-gradient {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.1) 10%,
+      rgba(255, 255, 255, 0.0001) 50%,
+      rgba(255, 255, 255, 0.0001) 50%,
+      rgba(255, 255, 255, 0.025) 100%
+    );
+  }
+  .arrow-btn {
+    @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full ;
+  }
+
+  .tech-logo {
+    @apply w-10 h-10 rounded-md p-2 bg-neutral-100  backdrop-filter backdrop-blur-lg flex justify-center items-center;
+  }
+
+
 
   /* Hero text slider starts */
   .slide {
