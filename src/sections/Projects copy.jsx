@@ -12,6 +12,7 @@ import DemoComputer2 from "../components/DemoComputer2.jsx";
 
 const projectCount = myProjects.length;
 
+
 const Projects = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = React.useState(0);
   const handleNavigation = (direction) => {
@@ -30,7 +31,8 @@ const Projects = () => {
       { opacity: 0 },
       { opacity: 1, duration: 1, stagger: 0.2, ease: "power2.inOut" }
     );
-  }, [selectedProjectIndex]);
+}, [selectedProjectIndex]);
+
 
   const currentProject = myProjects[selectedProjectIndex];
 
@@ -119,8 +121,14 @@ const Projects = () => {
           <directionalLight position={[10, 10, 5]} />
           <Center>
             <Suspense fallback={<CanvasLoader />}>
-              <group scale={5} position={[0, -4, 0]} rotation={[0, 5, 0]}>
-                <DemoComputer2 texture={currentProject.texture} />
+              <group
+             
+                scale={2}
+                position={[0, -3, 0]}
+                rotation={[0, -0.1, 0]}
+              >
+
+                <DemoComputer2 texture={currentProject.texture}/>
               </group>
             </Suspense>
           </Center>
