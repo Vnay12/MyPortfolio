@@ -1,8 +1,10 @@
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-
+import { Suspense } from "react";
 import TitleHeader from "../components/TitleHeader";
-import ContactExperience from "../components/contact/ContactExperience";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { Developer } from "../components/Developer/Developer";
+
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -108,8 +110,16 @@ const Contact = () => {
             </div>
           </div>
           <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              <ContactExperience />
+            <div className="bg-black-50 w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
+              <Canvas>
+                <ambientLight intensity={0.5} />
+                <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+                <directionalLight position={[10, 10, 10]} intensity={1} />
+                <OrbitControls enableZoom={false}  maxPolarAngle={Math.PI / 2}/>
+               
+                <Developer position-y={-3} scale={3}/>
+                
+              </Canvas>
             </div>
           </div>
         </div>
