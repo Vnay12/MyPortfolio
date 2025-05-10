@@ -9,7 +9,7 @@ export const Developer = ({ animationName = "idle", ...props }) => {
   const group = useRef();
   
   const { nodes, materials } = useGLTF("/models/Avatar.glb");
-  const { animations } = useFBX("/models/salute2.fbx");
+  const { animations } = useFBX("/models/Animation/Standup.fbx");
   
   // Properly name the animation
   if (animations && animations.length > 0) {

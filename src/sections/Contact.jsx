@@ -110,7 +110,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="xl:col-span-7 min-h-96">
-            <div className="bg-black-50 w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
+            <div className="bg-black-150 w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
               <Canvas>
                 <ambientLight intensity={0.5} />
                 <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
