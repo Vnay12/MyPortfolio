@@ -5,7 +5,7 @@ const LogoIcon = ({ icon }) => (
       <img
         src={icon.imgPath}
         alt="Logo"
-        className="w-32 h-32 object-contain" // You can adjust the size as needed
+        className="w-30 h-30 md:w-32 md:h-32 object-contain" // You can adjust the size as needed
       />
     </div>
   );
@@ -15,7 +15,7 @@ const LogoIcon = ({ icon }) => (
       <div className="gradient-edge" />
       <div className="gradient-edge" />
   
-      <div className="marquee h-52">
+      <div className="marquee h-40 ">
         <div className="marquee-box md:gap-12 gap-5 flex items-center">
           {logoIconsList.map((icon, index) => (
             <LogoIcon key={index} icon={icon} />

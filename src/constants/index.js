@@ -29,10 +29,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 2.5, suffix: "+", label: "Years of Experience", imgPath: "/images/Workexp.png" },
+  { value: 2, suffix: "+", label: "Years of Experience", imgPath: "/images/Workexp.png" },
   { value: 8, suffix: "+", label: "Enterprise Projects",imgPath: "/images/project.png" },
   { value: 15, suffix: "+", label: "Open Source PR Merged",imgPath: "/images/OpenS.png" },
-  { value: 78, suffix: "%", label: "Caffeine Intake",imgPath: "/images/coffee.png" },
+  { value: 80, suffix: "%", label: "Caffeine Intake 😁",imgPath: "/images/coffee.png" },
 ];
 
 const logoIconsList = [
@@ -40,7 +40,16 @@ const logoIconsList = [
     imgPath: "/images/logos/logo1.png",
   },
   {
-    imgPath: "/images/logos/logo2.png",
+    imgPath: "/images/logos/logo3.png",
+  },
+  {
+    imgPath: "/images/logos/logo4.png",
+  },
+  {
+    imgPath: "/images/logos/logo5.png",
+  },
+  {
+    imgPath: "/images/logos/logo1.png",
   },
   {
     imgPath: "/images/logos/logo3.png",
@@ -55,25 +64,17 @@ const logoIconsList = [
     imgPath: "/images/logos/logo1.png",
   },
   {
-    imgPath: "/images/logos/logo2.png",
-  },
-  {
     imgPath: "/images/logos/logo3.png",
-  },
-  {
-    imgPath: "/images/logos/logo4.png",
-  },
-  {
-    imgPath: "/images/logos/logo5.png",
   },
   
 ];
 export const myProjects = [
   {
     title: 'BookMySmile',
-    desc: 'Description',
+    desc: 'A smart medical appointment booking platform.',
     subdesc:
-      '',
+      'Enables patients to book, manage, and track doctor appointments with ease .',
+      
     href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
     texture: '/project/project1.mp4',
     logo: '/assets/logo.png',
@@ -107,13 +108,13 @@ export const myProjects = [
     ],
   },
   {
-    title: 'TITLE',
-    desc: 'Description',
+    title: 'QureAI',
+    desc: 'An AI-driven platform designed to cure interview anxiety.',
     subdesc:
-      '',
+      'Boost confidence with smart, real time AI-powered mock interviews and feedback.',
     href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
     texture: '/project/project2.mp4',
-    logo: '/assets/project-logo2.png',
+    logo: '/assets/project-logo1.png',
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
@@ -144,13 +145,13 @@ export const myProjects = [
     ],
   },
   {
-    title: 'Title',
-    desc: 'Description',
+    title: 'My Portfolio',
+    desc: 'A personal portfolio showcasing my work, skills, and journey.',
     subdesc:
-      '.',
+      'Built with modern web tech to highlight projects, blogs, and AI-focused creations',
     href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
     texture: '/project/project3.mp4',
-    logo: '/assets/project-logo3.png',
+    logo: '/images/portfolio.png',
     logoStyle: {
       backgroundColor: '#60f5a1',
       background:
@@ -183,13 +184,13 @@ export const myProjects = [
     ],
   },
   {
-    title: 'TITLE',
-    desc: 'DEscription',
+    title: 'Coding Bootcamp',
+    desc: 'Hands-on tutorials and in-depth explorations of core coding concepts and algorithms.',
     subdesc:
-      '',
+      'Learn coding with me from basics to advanced, using clear explanations and practical examples.',
     href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
     texture: '/project/project4.mp4',
-    logo: '/assets/project-logo4.png',
+    logo: '/images/youtube.png',
     logoStyle: {
       backgroundColor: '#0E1F38',
       border: '0.2px solid #0E2D58',

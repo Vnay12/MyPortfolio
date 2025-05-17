@@ -7,7 +7,6 @@ import { Suspense, useState } from "react";
 import CanvasLoader from "../components/Loading.jsx";
 import { Canvas } from "@react-three/fiber";
 import { Center, OrbitControls } from "@react-three/drei";
-import DemoComputer from "../components/DemoComputer.jsx";
 import DemoComputer2 from "../components/DemoComputer2.jsx";
 
 const projectCount = myProjects.length;
@@ -119,6 +118,16 @@ const Projects = () => {
           <directionalLight position={[10, 10, 5]} />
           <Center>
             <Suspense fallback={<CanvasLoader />}>
+              <Text
+                position={[0, 2, 0]} // adjust Y position to be above computer
+                fontSize={10}
+                color="white"
+                anchorX="center"
+                anchorY="middle"
+              >
+                Test
+              </Text>
+
               <group scale={5} position={[0, -4, 0]} rotation={[0, 5, 0]}>
                 <DemoComputer2 texture={currentProject.texture} />
               </group>
