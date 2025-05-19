@@ -9,10 +9,13 @@ import Experience from './sections/ExperienceSection.jsx';
 import TechStack from './sections/TechStack.jsx';
 import Contact from './sections/Contact.jsx';
 import CollegeExperience from './sections/CollegeSection.jsx';
+import NavBar from './components/NavBar.jsx';
+import Footer from './sections/Footer.jsx';
 
 const App = () => {
   return (
 <>
+<NavBar />
 <Hero />
 <ShowcaseSection />
 <Projects />
@@ -22,6 +25,7 @@ const App = () => {
 <CollegeExperience />
 <TechStack /> 
 <Contact />
+<Footer />
 
 </>
   )

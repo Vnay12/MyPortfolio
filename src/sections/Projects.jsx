@@ -35,7 +35,7 @@ const Projects = () => {
   const currentProject = myProjects[selectedProjectIndex];
 
   return (
-    <section className="c-space my-5">
+    <section id="Live" className="c-space my-5">
       <p className="head-text font-semibold mt-3 text-xl md:text-4xl text-center">
         LIVE PROJECTS
       </p>

@@ -3,17 +3,22 @@ const navLinks = [
     name: "Work",
     link: "#work",
   },
+   {
+    name: "Live Projects",
+    link: "#Live",
+  },
+  
   {
     name: "Experience",
     link: "#experience",
   },
+   {
+    name: "Education",
+    link: "#CollegeExperience",
+  },
   {
     name: "Skills",
     link: "#skills",
-  },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
   },
 ];
 
@@ -273,24 +278,24 @@ const abilities = [
 
 const techStackImgs = [
   {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
+    name: "Web Full Stack Development",
+    imgPath: "/images/www.png",
   },
   {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
+    name: "Cloud Computing & DevOps",
+    imgPath: "/images/cloud-server.png",
   },
   {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    name: "Artificial Intelligence & Machine Learning",
+    imgPath: "/images/ai.png",
   },
   {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
+    name: "Embedded Systems & Semiconductor Technologies",
+    imgPath: "/images/cpu.png",
   },
   {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
+    name: "Project Management",
+    imgPath: "/images/git.png",
   },
 ];
 
@@ -356,7 +361,7 @@ const expCards = [
     imgPath: "",
     logoPath: "/",
     title: "Research and Development Scientist - Alphasemi Technologies",
-    date: "OCT 2023 - JAN 2025",
+    date: "Oct 2023 - Jan 2025",
     responsibilities: ["Researched and analyzed FPGA and chipset semiconductor architectures through industry-focused literature.",
       "Developed and tested experimental designs using FPGA boards and NS-3 simulations.",
       "Validated proposed solutions on physical hardware, refining functionality and performance.",
@@ -368,7 +373,7 @@ const expCards = [
     imgPath: "/images/workexp/SELOGO.svg",
     logoPath: "/images/workexp/SE.jpeg",
     title: "Software Engineer - R&D",
-    date: "SEPT 2022 - OCT 2025",
+    date: "Sept 2022 - Oct 2025",
     responsibilities: [
       "Built and maintained backend services using Node.js and Express for real-time SCADA data handling",
       "Designed secure RESTful APIs and optimized data flow between system components.",
@@ -380,15 +385,26 @@ const expCards = [
 
 const expCards2 = [
   {
-    review: "Provided clear and helpful pull requests that were reviewed and merged, contributing positively to the project",
-    imgPath2: "images/workexp/tensorflow.svg",
-    logoPath2: "images/workexp/TF.png",
-    title2: "Open Source Contributor - Google TensorFlow",
-    date2: "Jan 2025 - Present",
+    review: "",
+    imgPath2: "images/workexp/UCB.png",
+    logoPath2: "images/workexp/CU.svg",
+    title2: "University of Colorado Boulder (UCB)",
+    date2: "May 2025 - Present",
+    location: "Boulder, Colorado, USA",
     responsibilities2: [
-      "Contributed to the TensorFlow codebase by enhancing features and fixing bugs.",
-      "Collaborated with a global community of developers to improve code quality and documentation.",
-      "PartiParticipated in code reviews, submitted pull requests, and helped get contributions merged by maintaining quality and consistency.",
+      "Master's of Science in Computer Science",
+    ],
+  },
+
+  {
+    review: "",
+    imgPath2: "images/workexp/",
+    logoPath2: "images/workexp/Viit.png",
+    title2: "Vishwakarma Institute of Information Technology (VIIT)",
+    date2: "Aug 2018 - May 2022",
+    location: "Pune, Maharashtra, INDIA",
+    responsibilities2: [
+      "Bachelor of Technology in Computer Engineering",
     ],
   },
 ]
@@ -455,20 +471,24 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
+    name: "Linkedin",
+    URL: "https://www.linkedin.com/in/vnay1712/",
+    imgPath: "/images/linkedin.png",
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
+    name: "Github",
+    URL: "https://github.com/Vnay12",
+    imgPath: "/images/github.png",
   },
   {
     name: "x",
+    URL: "https://x.com/vnaik012",
     imgPath: "/images/x.png",
   },
   {
-    name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    name: "Insta",
+    URL: "https://www.instagram.com/_vnaik012/",
+    imgPath: "/images/insta.png",
   },
 ];
 

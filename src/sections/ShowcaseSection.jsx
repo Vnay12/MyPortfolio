@@ -59,7 +59,7 @@ const ShowcaseSection = () => {
   }, []);
 
   return (
-    <div>
+    <div id="work">
       <div
         ref={(el) => {
           if (el) {
@@ -86,7 +86,7 @@ const ShowcaseSection = () => {
         />
       </div>
 
-      <div id="work" ref={sectionRef} className="app-showcase">
+      <div ref={sectionRef} className="app-showcase">
         <div className="showcaselayout flex flex-col md:flex-row gap-8 md:gap-6">
           
           <div

@@ -95,9 +95,9 @@ const CollegeExperience = () => {
             {expCards2.map((card) => (
               <div key={card.title2} className="exp-card-wrapper college-timeline-card">
                 <div className="xl:w-2/6">
-                  <GlowCard2 card={card}>
-                    <div>
-                      <img src={card.imgPath2} alt="exp-img" />
+                  <GlowCard2 card={card} index={0}>
+                    <div className="w-full h-full overflow-hidden rounded-xl transform -translate-y-5">
+                      <img src={card.imgPath2} alt="Education" className="w-full h-full object-cover" />
                     </div>
                   </GlowCard2>
                 </div>
@@ -116,8 +116,8 @@ const CollegeExperience = () => {
                         <p className="my-5 text-white-50">
                           🗓️&nbsp;{card.date2}
                         </p>
-                        <p className="text-[#839CB5] italic">
-                          Responsibilities
+                         <p className="my-5 text-white-50">
+                          📍&nbsp;{card.location}
                         </p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
                           {card.responsibilities2.map(
