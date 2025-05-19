@@ -29,10 +29,30 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 2, suffix: "+", label: "Years of Experience", imgPath: "/images/Workexp.png" },
-  { value: 8, suffix: "+", label: "Enterprise Projects",imgPath: "/images/project.png" },
-  { value: 15, suffix: "+", label: "Open Source PR Merged",imgPath: "/images/OpenS.png" },
-  { value: 80, suffix: "%", label: "Caffeine Intake 😁",imgPath: "/images/coffee.png" },
+  {
+    value: 2,
+    suffix: "+",
+    label: "Years of Experience",
+    imgPath: "/images/Workexp.png",
+  },
+  {
+    value: 8,
+    suffix: "+",
+    label: "Enterprise Projects",
+    imgPath: "/images/project.png",
+  },
+  {
+    value: 6,
+    suffix: "",
+    label: "Open Source PR Merged",
+    imgPath: "/images/OpenS.png",
+  },
+  {
+    value: 80,
+    suffix: "%",
+    label: "Caffeine Intake 😁",
+    imgPath: "/images/coffee.png",
+  },
 ];
 
 const logoIconsList = [
@@ -66,194 +86,168 @@ const logoIconsList = [
   {
     imgPath: "/images/logos/logo3.png",
   },
-  
 ];
 export const myProjects = [
   {
-    title: 'BookMySmile',
-    desc: 'A smart medical appointment booking platform.',
+    title: "BookMySmile",
+    desc: "A smart medical appointment booking platform.",
     subdesc:
-      'Enables patients to book, manage, and track doctor appointments with ease .',
-      
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-    texture: '/project/project1.mp4',
-    logo: '/assets/logo.png',
+      "Enables patients to book, manage, and track doctor appointments with ease .",
+
+    href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
+    texture: "/project/project1.mp4",
+    logo: "/assets/logo.png",
+    arrow: "Check Live Site",
+    arrow2: "Video Walkthrough",
+    arrowimg: "/images/youtube.png",
+    arrowimg2: "/assets/www.png",
     logoStyle: {
-      backgroundColor: '#2A1816',
-      border: '0.2px solid #36201D',
-      boxShadow: '0px 0px 60px 0px #AA3C304D',
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
     },
-    spotlight: '/assets/spotlight1.png',
+    spotlight: "/assets/spotlight1.png",
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: "React.js",
+        path: "/assets/react.svg",
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: "node.js",
+        path: "assets/nodejs.png",
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: "appwrite",
+        path: "/assets/appwrite.svg",
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: "vonage",
+        path: "/assets/vonage.svg",
       },
     ],
   },
   {
-    title: 'QureAI',
-    desc: 'An AI-driven platform designed to cure interview anxiety.',
+    title: "QureAI",
+    desc: "An AI-driven platform designed to cure interview anxiety.",
     subdesc:
-      'Boost confidence with smart, real time AI-powered mock interviews and feedback.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    texture: '/project/project2.mp4',
-    logo: '/assets/project-logo1.png',
+      "Boost confidence with smart, real time AI-powered mock interviews and feedback.",
+    href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
+    texture: "/project/project2.mp4",
+    logo: "/assets/project-logo1.png",
+    arrow: "Check Live Site",
+    arrow2: "Video Walkthrough",
+    arrowimg: "/images/youtube.png",
+    arrowimg2: "/assets/www.png",
     logoStyle: {
-      backgroundColor: '#13202F',
-      border: '0.2px solid #17293E',
-      boxShadow: '0px 0px 60px 0px #2F6DB54D',
+      backgroundColor: "#13202F",
+      border: "0.2px solid #17293E",
+      boxShadow: "0px 0px 60px 0px #2F6DB54D",
     },
-    spotlight: '/assets/spotlight2.png',
+    spotlight: "/assets/spotlight2.png",
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: "React.js",
+        path: "/assets/react.svg",
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: "openAI",
+        path: "assets/chatgpt.png",
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: "Node.js",
+        path: "/assets/nodejs.png",
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: "PostgreSQL",
+        path: "/assets/postgresql.svg",
       },
     ],
   },
   {
-    title: 'My Portfolio',
-    desc: 'A personal portfolio showcasing my work, skills, and journey.',
+    title: "My Portfolio",
+    desc: "A personal portfolio showcasing my work, skills, and journey.",
     subdesc:
-      'Built with modern web tech to highlight projects, blogs, and AI-focused creations',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    texture: '/project/project3.mp4',
-    logo: '/images/portfolio.png',
+      "Built with modern web tech to highlight projects, blogs, and AI-focused creations",
+    href: "https://www.youtube.com/watch?v=lEflo_sc82g",
+    texture: "/project/project3.mp4",
+    logo: "/images/portfolio.png",
+    arrow: "Video Walkthrough ",
+    arrowimg2: "/images/youtube.png",
     logoStyle: {
-      backgroundColor: '#60f5a1',
+      backgroundColor: "#60f5a1",
       background:
-        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-      border: '0.2px solid rgba(208, 213, 221, 1)',
-      boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+        "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+      border: "0.2px solid rgba(208, 213, 221, 1)",
+      boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
     },
-    spotlight: '/assets/spotlight3.png',
+    spotlight: "/assets/spotlight3.png",
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: "React.js",
+        path: "/assets/react.svg",
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: "threejs",
+        path: "assets/threejs.png",
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: "Reactspring",
+        path: "/assets/spring.svg",
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: "blender",
+        path: "/assets/blender.png",
       },
     ],
   },
   {
-    title: 'Coding Bootcamp',
-    desc: 'Hands-on tutorials and in-depth explorations of core coding concepts and algorithms.',
+    title: "Coding Bootcamp",
+    desc: "Hands-on tutorials and in-depth explorations of core coding concepts and algorithms.",
     subdesc:
-      'Learn coding with me from basics to advanced, using clear explanations and practical examples.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-    texture: '/project/project4.mp4',
-    logo: '/images/youtube.png',
+      "Learn coding with me from basics to advanced, using clear explanations and practical examples.",
+    href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
+    texture: "/project/project4.mp4",
+    arrow: "My YouTube Channel",
+    arrowimg2: "/images/youtube.png",
+    logo: "/images/youtube.png",
     logoStyle: {
-      backgroundColor: '#0E1F38',
-      border: '0.2px solid #0E2D58',
-      boxShadow: '0px 0px 60px 0px #2F67B64D',
+      backgroundColor: "#0E1F38",
+      border: "0.2px solid #0E2D58",
+      boxShadow: "0px 0px 60px 0px #2F67B64D",
     },
-    spotlight: '/assets/spotlight4.png',
+    spotlight: "/assets/spotlight4.png",
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: "Data",
+        path: "/assets/data.png",
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: "Algorithms",
+        path: "assets/algorithm.png",
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: "AI",
+        path: "/assets/Ai.png",
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
-  {
-    title: 'Title',
-    desc: 'Description',
-    subdesc:
-      '',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    texture: '/project/project5.mp4',
-    logo: '/assets/project-logo5.png',
-    logoStyle: {
-      backgroundColor: '#1C1A43',
-      border: '0.2px solid #252262',
-      boxShadow: '0px 0px 60px 0px #635BFF4D',
-    },
-    spotlight: '/assets/spotlight5.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: "Leetcode",
+        path: "/assets/Leetcode.png",
       },
     ],
   },
@@ -261,19 +255,19 @@ export const myProjects = [
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    imgPath: "/images/ps.png",
+    title: "Problem Solving",
+    desc: "I break down complex issues and build scalable, efficient solutions through clean, thoughtful code.",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    imgPath: "/images/adaptation.png",
+    title: "Adaptability & System Thinking",
+    desc: "Able to quickly learn new technologies and understand how different components interact to build cohesive, maintainable systems.",
   },
   {
     imgPath: "/images/time.png",
     title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    desc: "Delivering projects promptly without compromising on quality or meticulous attention to detail.",
   },
 ];
 
@@ -335,36 +329,69 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "",
-    imgPath: "",
-    logoPath: "",
-    title: "Software Developer",
-    date: "",
+    review: "Provided clear and helpful pull requests that were reviewed and merged, contributing positively to the project",
+    imgPath: "images/workexp/tensorflow.svg",
+    logoPath: "images/workexp/TF.png",
+    title: "Open Source Contributor - Google TensorFlow",
+    date: "Jan 2025 - Present",
     responsibilities: [
-      "",
+      "Contributed to the TensorFlow codebase by enhancing features and fixing bugs.",
+      "Collaborated with a global community of developers to improve code quality and documentation.",
+      "PartiParticipated in code reviews, submitted pull requests, and helped get contributions merged by maintaining quality and consistency.",
     ],
   },
   {
-    review: "",
-    imgPath: "",
-    logoPath: "",
-    title: "Full Stack Developer",
-    date: "",
-    responsibilities: [
-      "",
-    ],
+    review: "Submitted modular code using Spring annotations and REST standards, improving structure and maintainability.",
+    imgPath: "images/workexp/SpringLogo.svg",
+    logoPath: "images/workexp/Spring.png",
+    title: "Open Source Contributor - Java Spring Framework",
+    date: "December 2024 - Present",
+    responsibilities: ["Implemented and enhanced RESTful APIs using Spring Boot, contributing code via structured pull requests.",
+      "Collaborated with maintainers to follow best practices in dependency injection, exception handling, and code modularity.",
+      "Reviewed and tested PRs for issues like request validation, API response consistency, and service layer logic."],
+
   },
   {
-    review: "",
+    review: "Showed strong technical curiosity and hands-on ability by successfully designing, testing, and integrating FPGA-based solutions with real hardware systems",
     imgPath: "",
     logoPath: "/",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Research and Development Scientist - Alphasemi Technologies",
+    date: "OCT 2023 - JAN 2025",
+    responsibilities: ["Researched and analyzed FPGA and chipset semiconductor architectures through industry-focused literature.",
+      "Developed and tested experimental designs using FPGA boards and NS-3 simulations.",
+      "Validated proposed solutions on physical hardware, refining functionality and performance.",
+      "Integrated custom accelerator designs with existing hardware/software stacks for compatibility and reliability.",
+    ],
+  },
+   {
+    review: "Delivered secure, performant backend solutions with strong API design and reliable data handling in a real-time SCADA environment",
+    imgPath: "/images/workexp/SELOGO.svg",
+    logoPath: "/images/workexp/SE.jpeg",
+    title: "Software Engineer - R&D",
+    date: "SEPT 2022 - OCT 2025",
     responsibilities: [
-      "",
+      "Built and maintained backend services using Node.js and Express for real-time SCADA data handling",
+      "Designed secure RESTful APIs and optimized data flow between system components.",
+      "Implemented input validation and protection against OWASP Top 10 vulnerabilities.",
+      "Contributed to database design and ensured efficient data processing and retrieval.",
     ],
   },
 ];
+
+const expCards2 = [
+  {
+    review: "Provided clear and helpful pull requests that were reviewed and merged, contributing positively to the project",
+    imgPath2: "images/workexp/tensorflow.svg",
+    logoPath2: "images/workexp/TF.png",
+    title2: "Open Source Contributor - Google TensorFlow",
+    date2: "Jan 2025 - Present",
+    responsibilities2: [
+      "Contributed to the TensorFlow codebase by enhancing features and fixing bugs.",
+      "Collaborated with a global community of developers to improve code quality and documentation.",
+      "PartiParticipated in code reviews, submitted pull requests, and helped get contributions merged by maintaining quality and consistency.",
+    ],
+  },
+]
 
 const expLogos = [
   {
@@ -451,6 +478,7 @@ export {
   logoIconsList,
   counterItems,
   expCards,
+  expCards2,
   expLogos,
   testimonials,
   socialImgs,

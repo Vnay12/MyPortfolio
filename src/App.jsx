@@ -8,6 +8,7 @@ import FeaturedCard from './sections/FeaturedCard.jsx';
 import Experience from './sections/ExperienceSection.jsx';
 import TechStack from './sections/TechStack.jsx';
 import Contact from './sections/Contact.jsx';
+import CollegeExperience from './sections/CollegeSection.jsx';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
 <LogoShowcase />
 <FeaturedCard />
 <Experience />
+<CollegeExperience />
 <TechStack /> 
 <Contact />
 

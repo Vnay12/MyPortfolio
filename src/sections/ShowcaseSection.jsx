@@ -12,6 +12,20 @@ const ShowcaseSection = () => {
   const libraryRef = useRef(null);
   const ycDirectoryRef = useRef(null);
 
+  // Move handleCardClick outside so it can be used in JSX
+  const handleCardClick = (ref, url) => {
+    gsap.to(ref.current, {
+      scale: 0.95,
+      duration: 0.1,
+      yoyo: true,
+      repeat: 1,
+      ease: "power1.inOut",
+      onComplete: () => {
+        window.open(url, "_blank");
+      },
+    });
+  };
+
   useGSAP(() => {
     // Animation for the main section
     gsap.fromTo(
@@ -19,19 +33,6 @@ const ShowcaseSection = () => {
       { opacity: 0 },
       { opacity: 1, duration: 1.5 }
     );
-
-    const handleCardClick = (ref, url) => {
-      gsap.to(ref.current, {
-        scale: 0.95,
-        duration: 0.1,
-        yoyo: true,
-        repeat: 1,
-        ease: "power1.inOut",
-        onComplete: () => {
-          window.open(url, "_blank");
-        },
-      });
-    };
 
     // Animations for each app showcase
     const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
@@ -94,7 +95,7 @@ const ShowcaseSection = () => {
             onClick={() =>
               handleCardClick(
                 libraryRef,
-                "https://github.com/library-management"
+                "https://github.com/Vnay12/HandSign-Text2Speech"
               )
             }
           >
@@ -107,7 +108,7 @@ const ShowcaseSection = () => {
             >
               <img
                 src="/images/HandsignBanner.png"
-                alt="Library Management Platform"
+                alt="SignSpeak: Hand Gestures to Real-Time Speech"
                 className="transition-transform duration-300 ease-in-out"
                 style={{ borderRadius: "8px" }}
               />
@@ -118,7 +119,7 @@ const ShowcaseSection = () => {
             ref={rydeRef}
             className="project relative cursor-pointer"
             onClick={() =>
-              handleCardClick(rydeRef, "https://github.com/ryde-app")
+              handleCardClick(rydeRef, "https://github.com/Vnay12/Suspecto_Crime_Detection_System")
             }
           >
             <div
@@ -144,7 +145,7 @@ const ShowcaseSection = () => {
             ref={ycDirectoryRef}
             className="project relative cursor-pointer"
             onClick={() =>
-              handleCardClick(ycDirectoryRef, "https://github.com/yc-directory")
+              handleCardClick(ycDirectoryRef, "https://github.com/Vnay12/Autonomix_VisionCraft")
             }
           >
             <div
@@ -156,7 +157,7 @@ const ShowcaseSection = () => {
             >
               <img
                 src="/images/CarBanner.png"
-                alt="YC Directory App"
+                alt="Autonomix VisionCraft"
                 className="transition-transform duration-300 ease-in-out"
                 style={{ borderRadius: "20px" }}
               />

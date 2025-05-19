@@ -5,6 +5,8 @@ import TitleHeader from "../components/TitleHeader";
 import TechIconCardExperience from "../components/tech_logos/TechIconCardExperience"; 
 import { techStackIcons } from "../constants";
 import { techStackImgs } from "../constants";
+import TitleHeader2 from "../components/TitleHeader2";
+
 
 const TechStack = () => {
   // Animate the tech cards in the skills section
@@ -38,9 +40,11 @@ const TechStack = () => {
   return (
     <div id="skills" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
-        <TitleHeader
-          title="How I Can Contribute & My Key Skills"
-          sub="🤝 What I Bring to the Table"
+        <TitleHeader2
+          title="View Complete Tech Stack"
+          sub="🧑‍💻 Tech Domains"
+          link={"https://github.com/Vnay12"}
+          
         />
         <div className="tech-grid">
           {/* Loop through the techStackIcons array and create a component for each item. 

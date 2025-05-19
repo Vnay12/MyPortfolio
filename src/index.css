@@ -324,23 +324,25 @@ section {
     }
   }
   /* projects section  */
-  .arrow-gradient {
+
+ 
+.arrow-btn {
+    @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full;
     background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.1) 10%,
-      rgba(255, 255, 255, 0.0001) 50%,
-      rgba(255, 255, 255, 0.0001) 50%,
-      rgba(255, 255, 255, 0.025) 100%
-    );
-  }
-  .arrow-btn {
-    @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full ;
+    to right,
+    rgba(255, 255, 255, 0.1) 10%,
+    rgba(255, 255, 255, 0.000025) 50%,
+    rgba(255, 255, 255, 0.000025) 50%,
+    rgba(255, 255, 255, 0.025) 100%
+  );
   }
 
   .tech-logo {
-    @apply w-10 h-10 rounded-md p-2 bg-neutral-100  backdrop-filter backdrop-blur-lg flex justify-center items-center;
+    @apply w-10 h-10 rounded-md p-2  backdrop-filter backdrop-blur-lg flex justify-center items-center;
+    background-color: rgba(115, 163, 236, 0.3);
   }
 
+  
 
 
   /* Hero text slider starts */
@@ -355,6 +357,8 @@ section {
     flex-direction: column;
     animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
   }
+
+  
 
   @keyframes wordSlider {
     0% {

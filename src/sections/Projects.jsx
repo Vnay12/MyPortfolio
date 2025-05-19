@@ -41,6 +41,7 @@ const Projects = () => {
       </p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-20 gap-5 w-full">
+        {/* LEFT SIDE — Project Details */}
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
           <div className="absolute top-0 right-0">
             <img
@@ -70,8 +71,10 @@ const Projects = () => {
             <p className="animatedText">{currentProject.subdesc}</p>
           </div>
 
-          <div className="flex items-center justify-between flex-wrap gap-5">
-            <div className="flex items-center gap-3">
+          {/* Tech stack + CTA container */}
+          <div className="flex items-center justify-between flex-wrap mt-4 w-full">
+            {/* Left: Tech stack logos */}
+            <div className="flex items-center gap-3 flex-wrap">
               {currentProject.tags.map((tag, index) => (
                 <div key={index} className="tech-logo">
                   <img src={tag.path} alt={tag.name} />
@@ -79,17 +82,46 @@ const Projects = () => {
               ))}
             </div>
 
-            <a
-              className="flex items-center gap-2 cursor-pointer text-white-600"
-              href={currentProject.href}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p>Check Live Site</p>
-              <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
-            </a>
+            {/* Middle: Optional Arrow2 */}
+            {currentProject.arrow2 && (
+              <div className="flex items-center gap-2 ml-20  mr-auto">
+                <img src={currentProject.arrowimg} alt="play" className="w-4 h-4" />
+                <a
+                  className="flex items-center gap-1 cursor-pointer text-white-600"
+                  href={currentProject.href2}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <p>{currentProject.arrow2}</p>
+                  <img
+                    src="/assets/arrow-up.png"
+                    alt="arrow"
+                    className="w-3 h-3"
+                  />
+                </a>
+              </div>
+            )}
+
+            {/* Right: Always at end */}
+            <div className="flex items-center gap-2 ml-4">
+              <img src={currentProject.arrowimg2} alt="link" className="w-4 h-4" />
+              <a
+                className="flex items-center gap-1 cursor-pointer text-white-600"
+                href={currentProject.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p>{currentProject.arrow}</p>
+                <img
+                  src="/assets/arrow-up.png"
+                  alt="arrow"
+                  className="w-3 h-3"
+                />
+              </a>
+            </div>
           </div>
 
+          {/* Navigation Arrows */}
           <div className="flex justify-between items-center mt-7">
             <button
               className="arrow-btn"
@@ -111,26 +143,26 @@ const Projects = () => {
           </div>
         </div>
 
+        {/* RIGHT SIDE — 3D Preview */}
         <div className="border border-black-300 bg-black-100 rounded-lg h-96 md:h-full">
-    <div className="relative h-full">
-      <p className="absolute top-3 left-3 tracking-widest uppercase text-blue-300 text-xl font-extraboldbold z-10">
-        PREVIEW
-      </p>
-      <Canvas>
-            <ambientLight intensity={Math.PI} />
-            <directionalLight position={[10, 10, 5]} />
-            <Center>
-              <Suspense fallback={<CanvasLoader />}>
-
-                <group scale={2} position={[0, -3, 0]} rotation={[0, 0.1, 0]}>
-                  <DemoComputer texture={currentProject.texture} />
-                </group>
-              </Suspense>
-            </Center>
-            <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
-          </Canvas>
+          <div className="relative h-full">
+            <p className="absolute top-3 left-3 tracking-widest uppercase text-blue-300 text-xl font-extrabold z-10">
+              PREVIEW
+            </p>
+            <Canvas>
+              <ambientLight intensity={Math.PI} />
+              <directionalLight position={[10, 10, 5]} />
+              <Center>
+                <Suspense fallback={<CanvasLoader />}>
+                  <group scale={2} position={[0, -3, 0]} rotation={[0, 0.1, 0]}>
+                    <DemoComputer texture={currentProject.texture} />
+                  </group>
+                </Suspense>
+              </Center>
+              <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
+            </Canvas>
+          </div>
         </div>
-      </div>
       </div>
     </section>
   );
